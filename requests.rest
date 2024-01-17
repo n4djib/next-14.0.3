@@ -1,0 +1,12 @@
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "n4djib",
+    "password": "n4djib",
+    "password_repeat": "n4djib",
+    "email": "n4djib@gmail.com"
+}
+
+
