@@ -36,7 +36,18 @@ const ModalOpener = () => {
       <br />
       <br />
       <br />
-      <Button variant="destructive">shadcn UI Button</Button>
+      <Button size="sm" variant="destructive">
+        shadcn UI Button
+      </Button>
+      <Button size="sm" variant="success" className="shadow-2xl">
+        INCREASE
+      </Button>
+      {/* className="bg-green-700" */}
+
+      <p className="text-destructive">Test Text Color</p>
+      <p className="text-success-foreground">Test Text Color</p>
+      <p className="text-success">Test Text Color</p>
+      <button className="p-2 bg-red-500 shadow shadow-md">sssss</button>
     </div>
   );
 };

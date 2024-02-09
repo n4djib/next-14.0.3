@@ -1,8 +1,12 @@
 "use client";
 
-import ModalWrapper from "./ModalWrapper";
+// import ModalWrapper from "./ModalWrapper";
+import ModalWrapper from "./ModalWrapper2";
 import { useStore } from "@/lib/zustand/useStore";
-import BTN from "@mui/material/Button";
+// import BTN from "@mui/material/Button";
+import { Button } from "@/app/_components/ui/button";
+import { DialogFooter, DialogHeader } from "../_components/ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 type TestModalProps = {
   message: string;
@@ -25,15 +29,20 @@ const TestModal = ({ message, counter }: TestModalProps) => {
       closeOnModalOverlay={closeOnModalOverlay}
       title="Modal Title from Prop"
     >
-      Make sure to use <code>aria-labelledby</code> on the modal dialog with an
-      attribute.
-      <div>
+      {/* <DialogHeader>
+        <DialogTitle>Modal Title from Prop</DialogTitle>
+      </DialogHeader> */}
+      <p>
         <b>Message:</b> {message} <b>- Counter:</b> {counter}
-      </div>
-      <br />
-      <BTN variant="outlined" color="primary" onClick={closeModal}>
-        Cancel
-      </BTN>
+      </p>
+      <DialogFooter>
+        <Button variant="success" type="submit">
+          Save changes
+        </Button>
+        <Button variant="outline" onClick={closeModal}>
+          Cancel
+        </Button>
+      </DialogFooter>
     </ModalWrapper>
   );
 };

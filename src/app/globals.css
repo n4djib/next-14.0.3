@@ -16,6 +16,11 @@
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
+    --success: 123, 46%, 34%;
+    /* --success: 124.48, 93%, 40%, 80%; */
+    --success-foreground: 112 40% 98%;
+    /* --success-foreground: 102, 93%, 40%, 80%; */
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
